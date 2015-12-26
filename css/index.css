@@ -744,7 +744,9 @@ html, body {
         height: 267px;
         border: 1px solid rgb(67, 74, 84);
     }
-
+    .fiveDiv .boxUp span,.fiveDiv  .boxDown span{
+        font-size: 1.25rem;
+    }
     .sixDiv div:nth-child(2) {
         position: absolute;
         left: 48%;
