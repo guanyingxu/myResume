@@ -1,0 +1,919 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.zIndex{
+    z-index: 111;
+}
+
+/*第一页css begin*/
+.firDiv {
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(67, 74, 84);
+    display: block;
+}
+
+.singPic {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -128px;
+    margin-top: -214px;
+    width: 256px;
+    height: 256px;
+    overflow: hidden;
+    background: url(../images/fir1.png) no-repeat;
+    border-radius: 50%;
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+}
+
+
+
+#singPic {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.fir-sing-firP {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -80px;
+    margin-top: -80px;
+    width: 160px;
+    height: 160px;
+    background-color: #fff;
+    opacity: 0.7;
+    border-radius: 50%;
+}
+
+.fir-sing-firP span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -85px;
+    margin-top: -22.5px;
+    display: block;
+    width: 170px;
+    height: 45px;
+    background: url(../images/resu.png) no-repeat;
+
+}
+
+.fir-sing-firP-span {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.heartPic {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -10px;
+    margin-top: 135px;
+    width: 20px;
+    height: 20px;
+    background: url(../images/heart.png) no-repeat;
+}
+
+.linearPic {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -128px;
+    margin-top: 110px;
+    width: 256px;
+    height: 50px;
+    background: url(../images/linear.png) no-repeat;
+    -webkit-transform: translate(0, 1000px);
+    transform: translate(0, 1000px);
+
+}
+
+#linearPic {
+    -webkit-transform: translate(0, 0px);
+    transform: translate(0, 0px);
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+/*第一页css end*/
+
+
+
+
+
+
+
+
+
+
+
+/*第二页css begin*/
+.secDiv {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(67, 74, 84);
+    display: none;
+
+}
+
+.secDiv div {
+    position: absolute;
+    height: 15%;
+}
+
+.secDiv div:nth-child(odd) {
+    left: 5%;
+    width: 70%;
+    background-color: #fff;
+}
+
+.secDiv div:nth-child(even) {
+    margin-left: 4%;
+    left: 70%;
+    width: 25%;
+    background-color: #fff;
+    -webkit-transform: translate(800px, 500px);
+    transform: translate(800px, 500px);
+
+}
+
+.secDiv div:nth-child(1) {
+    top: 4%;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.secDiv div:nth-child(3) {
+    top: 23%;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.secDiv div:nth-child(5) {
+    top: 42%;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.secDiv div:nth-child(7) {
+    top: 61%;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+.secDiv div:nth-child(9) {
+    top: 80%;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.secDiv div:nth-child(2) {
+    top: 4%;
+    background: url(../images/a1.png) no-repeat;
+    background-size: 100% 100%;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.secDiv div:nth-child(4) {
+    top: 23%;
+    background: url(../images/a2.png) no-repeat;
+    background-size: 100% 100%;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.secDiv div:nth-child(6) {
+    top: 42%;
+    background: url(../images/a3.png) no-repeat;
+    background-size: 100% 100%;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.secDiv div:nth-child(8) {
+    background: url(../images/a4.png) no-repeat;
+    background-size: 100% 100%;
+    top: 61%;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+
+}
+
+.secDiv div:nth-child(10) {
+    top: 80%;
+    background: url(../images/a5.png) no-repeat;
+    background-size: 100% 100%;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+
+}
+
+.secDiv div.secOddMove {
+    opacity:0.8;
+    -webkit-animation-name: myMove;
+    animation-name: myMove;
+
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: 1s;
+    transition: 1s;
+
+    /*-webkit-animation: myMove 1s linear; /!*infinite*!/*/
+    /*animation: myMove 1s linear;*/
+
+    /*当动画模拟完成后让当前元素的位置停留在最后一帧的位置*/
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes myMove {
+    0% {
+        left: -75%;
+    }
+    100% {
+        left: 2%;
+    }
+
+}
+
+@keyframes myMove {
+    0% {
+        left: -75%;
+    }
+    100% {
+        left: 2%;
+    }
+}
+
+.secDiv div p {
+    padding-left: 5%;
+    width: 100%;
+    height: 100%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #d34141;
+    text-align: left;
+    line-height: 500%;
+}
+
+/*第二页css end*/
+
+/*第三页css begin*/
+
+.thdDiv {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(67, 74, 84);
+    display: none;
+}
+
+.thdDiv h2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -100px;
+    margin-top: -218px;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 25px;
+    font-family: "\5FAE\8F6F\96C5\9ED1", Helvetica, sans-serif;
+    background-color: #fff;
+    opacity: 0.7;
+    border-radius: 5px;
+}
+
+.thdDiv-firDiv {
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -122px;
+    margin-top: -122px;
+    width: 244px;
+    height: 244px;
+    -webkit-transform: rotate(45deg);
+}
+
+@media screen and (min-device-width: 375px) {
+    .thdDiv-firDiv {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -150px;
+        margin-top: -150px;
+        width: 300px;
+        height: 300px;
+        -webkit-transform: rotate(45deg);
+    }
+
+    .thdDiv h2 {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -150px;
+        margin-top: -270px;
+        width: 300px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 25px;
+        font-family: "\5FAE\8F6F\96C5\9ED1", Helvetica, sans-serif;
+        background-color: #fff;
+        opacity: 0.7;
+        border-radius: 5px;
+    }
+}
+
+
+.thdDiv-firDiv div {
+    position: absolute;
+    left: 10%;
+    top: 12%;
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 33%;
+    height: 33%;
+    background-color: rgb(129, 222, 211);
+    border-radius: 10px;
+
+}
+
+.thdDiv-firDiv div:nth-child(2) {
+
+    left: 47%;
+    top: 12%;
+    background-color: rgb(255, 222, 107);
+}
+
+.thdDiv-firDiv div:nth-child(3) {
+
+    left: 10%;
+    top: 50%;
+    background-color: rgb(255, 145, 145);
+}
+
+.thdDiv-firDiv div:nth-child(4) {
+
+    left: 47%;
+    top: 50%;
+    background-color: rgb(59, 222, 247);
+}
+
+.thdDiv-firDiv span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -50%;
+    margin-top: -10px;
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    -webkit-transform: rotate(-45deg);
+}
+
+/*第三页css end*/
+
+/*第四页css begin*/
+
+.fourDiv {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(67, 74, 84);
+    display: none;
+}
+
+.fourDiv div:nth-child(1) {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 20%;
+    height: 90%;
+    background: url(../images/linear2.png);
+    background-size: 100%, 100%;
+}
+
+.fourDiv div p {
+    position: absolute;
+    left: 8%;
+    top: 3%;
+    width: 80%;
+    height: 10%;
+    border-radius: 50%;
+    background-color: #fff;
+
+}
+
+.fourDiv div p:nth-child(2) {
+    position: absolute;
+    left: 8%;
+    top: 24%;
+    width: 80%;
+    height: 10%;
+    border-radius: 50%;
+    background-color: #fff;
+
+}
+.fourDiv div p:nth-child(3) {
+    position: absolute;
+    left: 8%;
+    top: 45%;
+    width: 80%;
+    height: 10%;
+    border-radius: 50%;
+    background-color: #fff;
+
+}
+.fourDiv div p:nth-child(4) {
+    position: absolute;
+    left: 8%;
+    top: 66%;
+    width: 80%;
+    height: 10%;
+    border-radius: 50%;
+    background-color: #fff;
+
+}
+
+.fourDiv div p:nth-child(5) {
+    position: absolute;
+    left: 8%;
+    top: 86%;
+    width: 80%;
+    height: 10%;
+    border-radius: 50%;
+    background-color: #fff;
+
+}
+
+
+.fourDiv div:nth-child(2) {
+    position: absolute;
+    left: 27%;
+    top: 5%;
+    width: 70%;
+    height: 15%;
+    background-color: #ffffff;
+}
+
+.fourDiv div:nth-child(3) {
+    position: absolute;
+    left: 27%;
+    top: 23.5%;
+    width: 70%;
+    height: 15%;
+    background-color: #ffffff;
+}
+
+.fourDiv div:nth-child(4) {
+    position: absolute;
+    left: 27%;
+    top: 42.5%;
+    width: 70%;
+    height: 15%;
+    background-color: #ffffff;
+}
+
+.fourDiv div:nth-child(5) {
+    position: absolute;
+    left: 27%;
+    top: 61%;
+    width: 70%;
+    height: 15%;
+    background-color: #ffffff;
+}
+
+.fourDiv div:nth-child(6) {
+    position: absolute;
+    left: 27%;
+    top: 80%;
+    width: 70%;
+    height: 15%;
+    background-color: #ffffff;
+}
+
+.fourDiv div span{
+    display: inline-block;
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 5%;
+    text-align: left;
+    font-size: 1.1rem;
+    color: rgb(67, 74, 84);
+    font-weight: bold;
+}
+
+/*第四页css end*/
+/*第五页css begin*/
+.fiveDiv {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(230, 233, 238);
+    display: none;
+}
+
+.fiveDiv .smallBox{
+    position: absolute;
+    left: 70%;
+    top: 20%;
+    margin-left: -37px;
+    margin-top: -59px;
+    width: 64px;
+    height: 64px;
+    background: url(../images/fly.png) no-repeat;
+    background-size: 100%,100%;
+}
+
+.fiveDiv .smallBox2{
+    position: absolute;
+    left: 40%;
+    top: 10%;
+    margin-left: -37px;
+    margin-top: -57px;
+}
+
+.fiveDiv .box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -135px;
+    margin-top: -141px;
+    width: 280px;
+    height: 280px;
+    border:1px solid rgb(67, 74, 84);
+
+}
+
+.fiveDiv  .boxUp{
+    position: absolute;
+    left: 53%;
+    top: 50%;
+    margin-left: -165px;
+    margin-top: -105px;
+    width: 280px;
+    height: 100px;
+    background-color:rgb(67, 74, 84);
+}
+
+.fiveDiv  .boxDown{
+    position: absolute;
+    left: 53%;
+    top: 50%;
+    margin-left: -165px;
+    margin-top: 5px;
+    width: 280px;
+    height: 100px;
+    background-color:rgb(67, 74, 84);
+}
+.fiveDiv .boxUp span,.fiveDiv  .boxDown span{
+    padding-top: 2%;
+    padding-left: 5%;
+    font-size: 1.3rem;
+    text-align: left;
+    color:#ffffff;
+    display:block;
+}
+
+/*第五页 css end*/
+
+
+/*第六页 css begin*/
+.sixDiv {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(67, 74, 84);
+    display: none;
+}
+
+.sixDiv .boxUp {
+    position: absolute;
+    left: 64%;
+    top: 50%;
+    margin-left: -190px;
+    margin-top: -220px;
+    width: 220px;
+    height: 87px;
+    background-color: rgb(230, 233, 238);
+}
+
+.sixDiv  .boxDown{
+    position: absolute;
+    left: 64%;
+    top: 50%;
+    margin-left: -190px;
+    margin-top: -83px;
+    width: 220px;
+    height: 100px;
+    background-color: rgb(230, 233, 238);
+}
+.sixDiv .boxEnd{
+    position: absolute;
+    left: 64%;
+    top: 50%;
+    margin-left: -190px;
+    margin-top: 65px;
+    width: 220px;
+    height: 100px;
+    background-color: rgb(230, 233, 238);
+}
+.sixDiv .boxUp span,.sixDiv .boxDown span,.sixDiv .boxEnd span{
+    padding-left: 10%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 6.5rem;
+    color:#000;
+}
+.sixDiv div:nth-child(2){
+    position: absolute;
+    left: 38%;
+    top: 50%;
+    margin-left: 130px;
+    margin-top: -205px;
+    width: 58px;
+    height: 58px;
+    background: url(../images/roll.png) no-repeat;
+    background-size: 100%,100%;
+}
+.sixDiv div:nth-child(4){
+    position: absolute;
+    left: 38%;
+    top: 50%;
+    margin-left: 130px;
+    margin-top: -65px;
+    width: 58px;
+    height: 58px;
+    background: url(../images/roll.png) no-repeat;
+    background-size: 100%,100%;
+}
+.sixDiv div:nth-child(6){
+    position: absolute;
+    left: 38%;
+    top: 50%;
+    margin-left: 130px;
+    margin-top: 80px;
+    width: 58px;
+    height: 58px;
+    background: url(../images/roll.png) no-repeat;
+    background-size: 100%,100%;
+}
+
+/*第六页 css end*/
+
+
+/*媒体适配*/
+
+@media screen and (min-device-width: 375px) {
+
+
+    /*第五页适配*/
+
+    .fiveDiv .boxDown {
+        position: absolute;
+        left: 62%;
+        top: 50%;
+        margin-left: -199px;
+        margin-top: 5px;
+        width: 280px;
+        height: 100px;
+        background-color: rgb(67, 74, 84);
+    }
+
+    .fiveDiv .box {
+        position: absolute;
+        left: 56%;
+        top: 52%;
+        margin-left: -150px;
+        margin-top: -150px;
+        width: 278px;
+        height: 267px;
+        border: 1px solid rgb(67, 74, 84);
+    }
+
+    .sixDiv div:nth-child(2) {
+        position: absolute;
+        left: 48%;
+        top: 59%;
+        margin-left: 119px;
+        margin-top: -265px;
+        width: 58px;
+        height: 58px;
+        background: url(../images/roll.png) no-repeat;
+        background-size: 100%,100%;
+    }
+
+    .sixDiv div:nth-child(4) {
+        position: absolute;
+        left: 48%;
+        top: 54%;
+        margin-left: 119px;
+        margin-top: -85px;
+        width: 58px;
+        height: 58px;
+        background: url(../images/roll.png) no-repeat;
+        background-size: 100%,100%;
+    }
+
+    .sixDiv div:nth-child(6) {
+        position: absolute;
+        left: 48%;
+        top: 47%;
+        margin-left: 119px;
+        margin-top: 111px;
+        width: 58px;
+        height: 58px;
+        background: url(../images/roll.png) no-repeat;
+        background-size: 100%,100%;
+    }
+
+
+}
+
+
+@media screen and (min-device-width: 414px) {
+
+    .singPic {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -128px;
+        margin-top: -214px;
+        width: 256px;
+        height: 256px;
+        overflow: hidden;
+        background: url(../images/fir1.png) no-repeat;
+        border-radius: 50%;
+        -webkit-transform: scale(0, 0);
+        transform: scale(0, 0);
+    }
+
+
+    .thdDiv-firDiv {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -170px;
+        margin-top: -170px;
+        width: 340px;
+        height: 340px;
+        -webkit-transform: rotate(45deg);
+    }
+
+    .thdDiv h2 {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -150px;
+        margin-top: -270px;
+        width: 300px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 25px;
+        font-family: "\5FAE\8F6F\96C5\9ED1", Helvetica, sans-serif;
+        background-color: #fff;
+        opacity: 0.7;
+        border-radius: 5px;
+    }
+
+
+
+    .sixDiv .boxUp {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -150px;
+        margin-top: -255px;
+        width: 240px;
+        height: 110px;
+        background-color: rgb(230, 233, 238);
+    }
+
+    .sixDiv  .boxDown{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -150px;
+        margin-top: -95px;
+        width: 240px;
+        height: 110px;
+        background-color: rgb(230, 233, 238);
+    }
+    .sixDiv .boxEnd{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -150px;
+        margin-top: 65px;
+        width: 240px;
+        height: 110px;
+        background-color: rgb(230, 233, 238);
+    }
+    .sixDiv .boxUp span,.sixDiv .boxDown span,.sixDiv .boxEnd span{
+        padding-left: 10%;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+        line-height: 6.5rem;
+        color:#000;
+    }
+
+
+
+    .sixDiv div:nth-child(2) {
+        position: absolute;
+        left: 48%;
+        top: 59%;
+        margin-left: 130px;
+        margin-top: -295px;
+        width: 58px;
+        height: 58px;
+        background: url(../images/roll.png) no-repeat;
+        background-size: 100%,100%;
+    }
+
+    .sixDiv div:nth-child(4) {
+        position: absolute;
+        left: 48%;
+        top: 54%;
+        margin-left: 130px;
+        margin-top: -95px;
+        width: 58px;
+        height: 58px;
+        background: url(../images/roll.png) no-repeat;
+        background-size: 100%,100%;
+    }
+
+    .sixDiv div:nth-child(6) {
+        position: absolute;
+        left: 48%;
+        top: 47%;
+        margin-left: 130px;
+        margin-top: 111px;
+        width: 58px;
+        height: 58px;
+        background: url(../images/roll.png) no-repeat;
+        background-size: 100%,100%;
+    }
+
+
+
+}
+
+
+
